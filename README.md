@@ -6,8 +6,6 @@ This project explores the interpretability of a machine learning model applied t
 
 A Random Forest Classifier is used as our model to capture complex feature interactions, and the explainability methods help us visualize the relationship between the features and the target variable.
 
----
-
 ## Explainability Techniques Used
 
 - **Partial Dependence Plots (PDP):** Visualizes the average effect of a feature on the model’s predictions, giving a global view of feature influence.
@@ -16,8 +14,6 @@ A Random Forest Classifier is used as our model to capture complex feature inter
 
 - **Accumulated Local Effects (ALE):** A robust method that captures local feature effects and corrects for correlations between features, providing a more accurate interpretation than PDP.
 
----
-
 ## Key Objectives
 
 1. **Feature Understanding:** Analyze how features such as age, fare, and passenger class affect the model’s predictions.
@@ -25,8 +21,6 @@ A Random Forest Classifier is used as our model to capture complex feature inter
 2. **Interpretability Comparison:** Explore the differences between PDP, ICE, and ALE to assess how each method handles feature interactions and correlations.
 
 3. **Feature Interaction Exploration:** Use ALE to uncover and interpret feature interactions (e.g., between age and fare).
-
----
 
 ## Sample Results and Visualizations
 
@@ -50,8 +44,6 @@ Using a first-order ALE plot, we can observe the local effects of **age** and **
 
 ![image](https://github.com/user-attachments/assets/362ca161-f2cd-4fee-9cba-9ce6c17bbc72)
 
----
-
 ## Discussion & Conclusion
 
 #### Comparative Analysis: PDP vs ALE
@@ -68,8 +60,6 @@ Using a first-order ALE plot, we can observe the local effects of **age** and **
 - Age: There’s a lot of variability in how age affects survival, with interactions playing a big role. Younger passengers clearly had an advantage, but as age increases, the situation becomes more complex, particularly when factoring in other variables like class.
 
 - Fare: Fare is more straightforward—paying more almost always meant a higher chance of survival. The PDP, ICE, and ALE plots all tell a consistent story here, with fewer variations compared to age.
-
----
 
 ## Key Takeaways
 
